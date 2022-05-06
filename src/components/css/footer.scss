@@ -1,0 +1,50 @@
+#footer {
+    font-size:  10px;
+    background: #191919;
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            width: 72px;
+            margin: 0 24px;
+            padding: 8px 0;
+            img {
+                display: block;
+                width: 100%;
+
+            }
+        }
+        .info {
+            margin: 0 24px;
+            .info-box {
+                margin-bottom: 18px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    i {
+                        img {
+                            margin: 0;
+                            width: 20px;
+                            display: inline-block;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        margin-left: 6px;
+                        color: #E5E4E4;
+                    }
+                }
+            }
+        }
+    }
+}

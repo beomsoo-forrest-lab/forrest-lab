@@ -1,0 +1,38 @@
+#first-row {
+    padding: 120px 0;
+    .container {
+        display: flex;
+        justify-content: center;
+        .content {
+            img {
+                width: 100%;
+                display: block;
+            }
+            .description {
+                display: flex;
+                padding: 12px 0;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .title {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                .more {
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .content-left {
+            width: 432px;
+        }
+
+        .content-right {
+            width: 552px;
+            margin: 168px 0 0 168px;
+        }
+    }
+}

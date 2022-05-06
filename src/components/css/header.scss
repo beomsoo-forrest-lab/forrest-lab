@@ -1,0 +1,102 @@
+#header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+    .container {
+        padding: 0 24px;
+        height: 120px;
+        transition: 0.5s ease;
+
+        .downbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            width: 100%;
+            height: 0;
+            transition: 0.5s ease;
+            li {
+                font-size: 24px;
+                line-height: 36px;
+                width: max-content;
+                margin: 12px auto;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .display {
+            opacity: 1;
+            height: 100%;
+        }
+
+        .main-navigation {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+            img {
+                display: block;
+                width: 80px;
+                background: transparent;
+            }
+    
+            .hamburger-button {
+                position: relative;
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
+                .pattie {
+                    position: absolute;
+                    display: block;
+                    width: 32px;
+                    height: 2px;
+                    left: 8px;
+                    background: #191919;
+                    transition: 0.5s ease;
+                }
+
+                .pattie01 {
+                    top: 16px;
+                }
+
+                .pattie01-rotate {
+                    top: 24px;
+                    transform: rotate(150deg);
+                }
+
+                .pattie02 {
+                    top: 28px;
+                }
+
+                .pattie02-rotate {
+                    top: 24px;
+                    transform: rotate(-150deg);
+                }
+            }
+        }
+    }
+
+    .rolldown {
+        height: 100vh;
+    }
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    transition: 0.5s ease;
+}c
+
+.header-blur {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+}
