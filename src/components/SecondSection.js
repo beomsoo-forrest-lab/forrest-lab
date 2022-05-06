@@ -9,8 +9,12 @@ function SecondSection() {
             <div className="container">
                 <div className="box">
                     <div className="text-box">
-                        <h1>Lorem Ipsum</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum, mauris vitae dictum dictum, magna ipsum malesuada ipsum, nec blandit mauris erat eget urna. Proin id euismod magna. Phasellus quis mol</p>
+                        <h1>Forrest lab</h1>
+                        <p>
+                            Forrest lab is a partnership of two architects – Puisto and CELT. Puisto and CELT established their office in Finland in 2018. The office is currently located in both, Helsinki, and Seoul.
+
+                            Forrest lab is a progressive and contemporary practice that focuses on architecture and design - from urban planning to buildings, interiors, objects, and products. As an active part of a design process, Pirinen & Salo is involved throughout the whole process, from the first sketch to on-site supervision.
+                        </p>
                     </div>
                 </div>
             </div>
