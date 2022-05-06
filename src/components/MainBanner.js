@@ -3,7 +3,7 @@ import "./css/main-banner.scss"
 
 function MainBanner(props) {
     return (
-        <div id="main-banner" ref={props.value}>
+        <div id="main-banner">
             <div className="banner-container">
                 <div className="text-box" data-aos="fade-up">
                     <h1>We’re architects who design places, spaces and experiences.</h1>
