@@ -1,11 +1,11 @@
- .masonry { 
+ .masonry {
     .container {
         display: flex;
         flex-wrap: wrap;
         max-width: 1060px;
         .masonry-content {
             max-width: 50%;
-            margin: 48px 0;
+            margin: 10vh 0;
             padding: 0 24px;
             img {
                 width: 100%;
@@ -31,13 +31,8 @@
                 }
             }
             &:nth-child(2n) {
-                margin-top: 128px;
+                margin-top: 20vh;
             }
-        }
-        
-
-        .masonry-content-right {
-            margin-top: 128px;
         }
     }
 }

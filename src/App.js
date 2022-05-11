@@ -1,3 +1,4 @@
+import { forwardRef, useRef } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,7 +14,7 @@ import content02 from "assets/img/content02.jpg";
 import content03 from "assets/img/content03.jpg";
 import content04 from "assets/img/content04.jpg";
 
-function App() {
+const App = (props) => {
   AOS.init({
     disable: false,
     duration : 1000,
@@ -44,17 +45,35 @@ function App() {
       title : "second box",
       image : content04,
     },
-  ]
+    {
+      id : 5,
+      title : "Fifth box",
+      image : content04,
+    },
+  ];
+
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const doRef = useRef(null);
+
+
+  const onHomeClick = () => { homeRef.current.scrollIntoView({behavior : "smooth"}) };
+  const onAboutClick = () => { aboutRef.current.scrollIntoView({behavior : "smooth"}) };
+  const onDoClick = () => { doRef.current.scrollIntoView({behavior : "smooth"}) };
+
 
   return (
     <div className="main">
-      <Header/>
-      <MainBanner/>
-      <ImageText/>
-      <Masonry contents={contents}/>
+      <Header 
+        onHomeClick = {onHomeClick}
+        onAboutClick = {onAboutClick}
+        onDoClick = {onDoClick}/>
+      <MainBanner ref={homeRef}/>
+      <ImageText ref={aboutRef}/>
+      <Masonry ref={doRef} contents={contents} />
       <Footer/>
     </div>
   );
-}
+};
 
 export default App;

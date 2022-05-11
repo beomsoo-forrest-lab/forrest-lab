@@ -1,9 +1,9 @@
-import React, {useState, useRef} from "react";
-import {Link} from "react-router-dom";
+import React, {useState, forwardRef} from "react";
+import { Link } from "react-router-dom";
 
 import Logo_black from "assets/img/logo_black.svg";
 
-function Header(props) {
+const Header = (props) => {
     const [downbar, setDownbar] = useState(false);
     const showDownbar = () => setDownbar(!downbar);
 
@@ -22,20 +22,14 @@ function Header(props) {
                 </div>
 
                 <ul className={downbar ? "downbar display" : "downbar"}>
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        About us
-                    </li>
-                    <li>
-                        What we do
-                    </li>
+                    <li onClick={() => {props.onHomeClick(); showDownbar(); }}>Home</li>
+                    <li onClick={() => {props.onAboutClick(); showDownbar(); }}>About us</li>
+                    <li onClick={() => {props.onDoClick(); showDownbar(); }}>What we do</li>
                 </ul>
 
             </div>
         </div>
     )
-}
+};
 
 export default Header;

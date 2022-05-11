@@ -1,4 +1,6 @@
-const Masonry = props => {
+import { forwardRef } from "react";
+
+const Masonry = (props,ref) => {
     const listBlocks = props.contents.map((content) => 
         <div
         className="masonry-content masonry-content-left"
@@ -13,12 +15,12 @@ const Masonry = props => {
     );
 
     return (
-        <section className="section masonry">
+        <section className="section masonry" ref={ref}>
             <div className="container masonry-container">
                 {listBlocks}
             </div>
         </section>
     );
-}
+};
 
-export default Masonry;
+export default forwardRef(Masonry);

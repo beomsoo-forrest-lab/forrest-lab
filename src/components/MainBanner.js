@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import MainImg from "assets/img/main-img-ad.png"
 
-function MainBanner() {
+function MainBanner(props, ref) {
     return (
-        <section className="section main-banner">
+        <section className="section main-banner" ref={ref}>
             <div className="container">
                 <div className="copy-content" data-aos="fade-up">
                     <h1 className="copy-heading">
@@ -26,4 +27,4 @@ function MainBanner() {
     )
 }
 
-export default MainBanner;
+export default forwardRef(MainBanner);

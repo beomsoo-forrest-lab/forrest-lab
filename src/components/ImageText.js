@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import SecondSection from "assets/img/second-img.jpg"
 
-function ImageText() {
+function ImageText(props, ref) {
     return (
-        <section className="section image-text">
+        <section className="section image-text" ref={ref}>
             <div className="container">
                 <div className="copy-content">
                     <h1 
@@ -25,4 +25,4 @@ function ImageText() {
     )
 }
 
-export default ImageText;
+export default forwardRef(ImageText);
