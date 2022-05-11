@@ -5,9 +5,11 @@
         flex-direction: column;
         justify-content: center;
         .image-frame {
-            max-width: 1392px;
-            height: auto;    
+            max-width: 1080px;
+            height: auto;
+            margin: 0 auto;
             img {
+                display: block;
                 width: 100%;
             }
         }

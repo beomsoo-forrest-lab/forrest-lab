@@ -10,6 +10,11 @@
             img {
                 width: 100%;
                 display: block;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    opacity: 0.5;
+                }
             }
             .desc {
                 display: flex;
@@ -23,10 +28,9 @@
                     color: $primary-color;
                 }
 
-                .learn-more {
+                .date {
                     font-size: 12px;
                     line-height: 16px;
-                    text-decoration: underline;
                     color: $primary-color;
                 }
             }
@@ -34,5 +38,32 @@
                 margin-top: 20vh;
             }
         }
+    }
+
+    .popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: 0.5s ease;
+        cursor: pointer;
+
+        img {
+            display: block;
+            width: 60%;
+            height: auto;
+        }
+    }
+
+    .popup-open {
+        z-index: 999;
+        opacity: 1;
     }
 }

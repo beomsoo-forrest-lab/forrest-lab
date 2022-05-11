@@ -1,4 +1,4 @@
-import React, {useState, forwardRef} from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 import Logo_black from "assets/img/logo_black.svg";
@@ -11,8 +11,8 @@ const Header = (props) => {
         <div id="header" className= {downbar ? "header header-blur" : "header"}>
             <div className= {downbar ? "container rolldown" : "container"}>
                 <div className="main-navigation">
-                    <Link to="/#">
-                        <img src = { Logo_black } loading="lazy" />
+                    <Link to="/">
+                        <img src = { Logo_black } loading="lazy"/>
                     </Link>
 
                     <div className="hamburger-button" onClick={showDownbar}>
@@ -26,7 +26,6 @@ const Header = (props) => {
                     <li onClick={() => {props.onAboutClick(); showDownbar(); }}>About us</li>
                     <li onClick={() => {props.onDoClick(); showDownbar(); }}>What we do</li>
                 </ul>
-
             </div>
         </div>
     )
