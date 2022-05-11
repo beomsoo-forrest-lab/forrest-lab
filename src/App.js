@@ -33,7 +33,7 @@ const App = (props) => {
         <Routes>
           <Route 
             exact
-            path="/home"
+            path="/"
             element={
               <Home 
                 homeRef={homeRef}

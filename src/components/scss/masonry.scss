@@ -7,6 +7,11 @@
             max-width: 50%;
             margin: 10vh 0;
             padding: 0 24px;
+            @include mobile {
+                margin: 3vh 0;
+                padding: 0 12px;
+            }
+
             img {
                 width: 100%;
                 display: block;
@@ -36,6 +41,9 @@
             }
             &:nth-child(2n) {
                 margin-top: 20vh;
+                @include mobile {
+                    margin-top: 10vh;
+                }
             }
         }
     }
