@@ -1,5 +1,3 @@
-import "./css/section02.scss";
-
 import content03 from "assets/img/content03.jpg";
 import content04 from "assets/img/content04.jpg";
 

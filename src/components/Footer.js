@@ -1,5 +1,4 @@
 import React from "react";
-import "./css/footer.scss";
 
 import Logo_color from "assets/img/logo_color.svg";
 import Address_icon from "assets/img/i_address.svg";

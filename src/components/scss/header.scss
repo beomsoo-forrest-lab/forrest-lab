@@ -1,11 +1,13 @@
 #header {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100;
     width: 100%;
 
     .container {
         padding: 0 24px;
-        height: 120px;
+        height: 80px;
         transition: 0.5s ease;
 
         .downbar {
@@ -24,6 +26,7 @@
                 line-height: 36px;
                 width: max-content;
                 margin: 12px auto;
+                color: $primary-color;
 
                 &:hover {
                     text-decoration: underline;
@@ -42,10 +45,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 120px;
+            height: 80px;
             img {
                 display: block;
-                width: 80px;
+                width: 60px;
                 background: transparent;
             }
     
@@ -60,12 +63,12 @@
                     width: 32px;
                     height: 2px;
                     left: 8px;
-                    background: #191919;
+                    background: $primary-color;
                     transition: 0.5s ease;
                 }
 
                 .pattie01 {
-                    top: 16px;
+                    top: 17px;
                 }
 
                 .pattie01-rotate {
@@ -74,7 +77,7 @@
                 }
 
                 .pattie02 {
-                    top: 28px;
+                    top: 29px;
                 }
 
                 .pattie02-rotate {
@@ -87,16 +90,16 @@
 
     .rolldown {
         height: 100vh;
+        
     }
 }
 
 .header {
     background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
     transition: 0.5s ease;
-}c
+}
 
 .header-blur {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
 }

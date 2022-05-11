@@ -1,12 +1,12 @@
 import React, {useState, useRef} from "react";
 import {Link} from "react-router-dom";
-import "./css/header.scss"
 
 import Logo_black from "assets/img/logo_black.svg";
 
 function Header(props) {
     const [downbar, setDownbar] = useState(false);
     const showDownbar = () => setDownbar(!downbar);
+
     return (
         <div id="header" className= {downbar ? "header header-blur" : "header"}>
             <div className= {downbar ? "container rolldown" : "container"}>

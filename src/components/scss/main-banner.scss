@@ -1,0 +1,35 @@
+.main-banner {
+    width: 100%;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .image-frame {
+            max-width: 1392px;
+            height: auto;    
+            img {
+                width: 100%;
+            }
+        }
+
+        .copy-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 48px 0;
+            .copy-heading {
+                max-width: 524px;
+                margin-bottom: 24px;
+                color: $primary-color;
+            }
+
+            p {
+                max-width: 672px;
+                font-size: 14px;
+                line-height: 18px;
+                color: $primary-color;
+            }
+        }
+    }
+}

@@ -1,45 +1,24 @@
+@import "components/scss/config/asset.scss";
+@import "components/scss/config/reset.scss";
+
+@import "components/scss/header.scss";
+@import "components/scss/footer.scss";
+
+@import "components/scss/main-banner.scss";
+@import "components/scss/image-text.scss";
+@import "components/scss/masonry.scss";
+
+.section {
+    margin: 128px 0;
+}
 .container  {
     max-width: 1392px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
-#second-row {
-    padding: 120px 0;
-    .container {
-        display: flex;
-        justify-content: center;
-        .content {
-            img {
-                width: 100%;
-                display: block;
-            }
-            .description {
-                display: flex;
-                padding: 12px 0;
-                justify-content: space-between;
-                align-items: flex-end;
-
-                .title {
-                    font-size: 14px;
-                    line-height: 18px;
-                }
-
-                .more {
-                    font-size: 12px;
-                    line-height: 16px;
-                    text-decoration: underline;
-                }
-            }
-        }
-        .content-left {
-            width: 552px;
-            margin: 168px 0 0 48px;
-        }
-
-        .content-right {
-            width: 552px;
-            margin: 0 0 0 168px;
-        }
-    }
+.copy-heading {
+    @include font_heading;
+    margin-bottom: 24px;
 }

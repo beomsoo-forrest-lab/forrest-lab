@@ -1,0 +1,19 @@
+$primary-color: #191919;
+$secondary-color: #E4E4E4;
+$third-color : #97856D;
+
+$heading-size : 24px;
+$heading-height : 36px;
+
+@mixin font_heading {
+    font-size: $heading-size;
+    line-height: $heading-height;
+}
+
+$regular-size : 12px;
+$regular-height : 18px;
+
+@mixin font_regular {
+    font-size: $regular-size;
+    line-height: $regular-height;
+}

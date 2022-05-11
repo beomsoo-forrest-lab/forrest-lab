@@ -1,38 +1,43 @@
-#first-row {
-    padding: 120px 0;
+ .masonry { 
     .container {
         display: flex;
-        justify-content: center;
-        .content {
+        flex-wrap: wrap;
+        max-width: 1060px;
+        .masonry-content {
+            max-width: 50%;
+            margin: 48px 0;
+            padding: 0 24px;
             img {
                 width: 100%;
                 display: block;
             }
-            .description {
+            .desc {
                 display: flex;
                 padding: 12px 0;
                 justify-content: space-between;
                 align-items: flex-end;
 
-                .title {
+                .place {
                     font-size: 14px;
                     line-height: 18px;
+                    color: $primary-color;
                 }
 
-                .more {
+                .learn-more {
                     font-size: 12px;
                     line-height: 16px;
                     text-decoration: underline;
+                    color: $primary-color;
                 }
             }
+            &:nth-child(2n) {
+                margin-top: 128px;
+            }
         }
-        .content-left {
-            width: 432px;
-        }
+        
 
-        .content-right {
-            width: 552px;
-            margin: 168px 0 0 168px;
+        .masonry-content-right {
+            margin-top: 128px;
         }
     }
 }

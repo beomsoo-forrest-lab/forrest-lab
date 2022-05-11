@@ -1,33 +1,57 @@
 import AOS from 'aos';
-import {useRef} from "react";
-
-import 'reset.scss';
-import 'style.scss';
 import 'aos/dist/aos.css';
 
 import Footer from "components/Footer";
 import Header from "components/Header";
+
 import MainBanner from "components/MainBanner";
-import SecondSection from "components/SecondSection";
-import Section01 from "components/Section01";
-import Section02 from "components/Section02";
+import ImageText from "components/ImageText";
+import Masonry from "components/Masonry";
+
+import content01 from "assets/img/content01.jpg";
+import content02 from "assets/img/content02.jpg";
+import content03 from "assets/img/content03.jpg";
+import content04 from "assets/img/content04.jpg";
 
 function App() {
   AOS.init({
     disable: false,
-    delay : 50,
-    duration : 1800,
+    duration : 1000,
+    delay: 100,
   });
 
-  const toHome = useRef();
+  const contents = [
+    {
+      id : 1,
+      title : "First box",
+      desc : "learn more",
+      image : content01,
+    },
+    {
+      id : 2,
+      title : "second box",
+      desc : "learn more",
+      image : content02,
+    },
+    {
+      id : 3,
+      title : "second box",
+      desc : "learn more",
+      image : content03,
+    },
+    {
+      id : 4,
+      title : "second box",
+      image : content04,
+    },
+  ]
+
   return (
-    <div className="App">
+    <div className="main">
       <Header/>
-        <MainBanner value = {toHome}/>
-        <SecondSection/>
-        <Section01/>
-        <Section02/>
-        <Section01/>
+      <MainBanner/>
+      <ImageText/>
+      <Masonry contents={contents}/>
       <Footer/>
     </div>
   );
