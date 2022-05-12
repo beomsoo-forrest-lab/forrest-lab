@@ -44,7 +44,7 @@ const Home = (props, ref) => {
       ];
 
     return(
-        <div className="warp">
+        <div className="main">
             <MainBanner ref={props.homeRef}/>
             <ImageText ref={props.aboutRef}/>
             <Masonry ref={props.doRef} contents={contents} />
