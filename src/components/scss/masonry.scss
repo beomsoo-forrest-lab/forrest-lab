@@ -28,14 +28,14 @@
                 align-items: flex-end;
 
                 .place {
-                    font-size: 14px;
-                    line-height: 18px;
+                    @include font_regular;
                     color: $primary-color;
+                    @include mobile {
+                    }
                 }
 
                 .date {
-                    font-size: 12px;
-                    line-height: 16px;
+                    @include font_regular;
                     color: $primary-color;
                 }
             }
@@ -65,8 +65,12 @@
 
         img {
             display: block;
+            max-width: 1920px;
             width: 60%;
             height: auto;
+            @include mobile {
+                width: 90%;
+            }
         }
     }
 

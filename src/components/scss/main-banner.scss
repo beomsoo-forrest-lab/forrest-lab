@@ -28,9 +28,8 @@
 
             p {
                 max-width: 672px;
-                font-size: 14px;
-                line-height: 18px;
                 color: $primary-color;
+                @include font_regular;
             }
         }
     }

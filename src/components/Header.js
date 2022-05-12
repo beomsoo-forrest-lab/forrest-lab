@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
-import Logo_black from "assets/img/logo_black.svg";
+import logo_black from "assets/img/forrest_lab_icon.svg";
 
 const Header = (props) => {
     const [downbar, setDownbar] = useState(false);
@@ -12,7 +12,7 @@ const Header = (props) => {
             <div className= {downbar ? "container rolldown" : "container"}>
                 <div className="main-navigation">
                     <Link to="/">
-                        <img src = { Logo_black } loading="lazy"/>
+                        <img src = { logo_black } loading="lazy"/>
                     </Link>
 
                     <div className="hamburger-button" onClick={showDownbar}>

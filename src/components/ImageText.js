@@ -9,7 +9,7 @@ function ImageText(props, ref) {
                     <h1 
                     className="copy-heading" 
                     data-aos="fade-up">
-                        Forrest lab
+                        FORREST LAB
                     </h1>
                     <p
                     data-aos="fade-up"

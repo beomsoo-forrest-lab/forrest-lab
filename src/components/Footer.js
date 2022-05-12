@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo_color from "assets/img/logo_color.svg";
+import logo_basic from "assets/img/forrest_lab_logo_basic.svg";
 import Address_icon from "assets/img/i_address.svg";
 import Contact_icon from "assets/img/i_contact.svg";
 import Copyright_icon from "assets/img/i_copyright.svg";
@@ -10,7 +10,7 @@ function Footer() {
         <div id="footer">
             <div className="container">
                 <div className="logo">
-                    <img src= { Logo_color } alt="dd" />
+                    <img src= { logo_basic } alt="dd" />
                 </div>
                 <div className="info">
                     <div className="info-box address">

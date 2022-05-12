@@ -19,7 +19,6 @@ const Masonry = (props, ref) => {
                     }}/>
             <div className="desc">
                 <p className="place">{content.title}</p>
-                <p className="date">{content.desc}</p>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import MainImg from "assets/img/main-img-ad.png"
+import MainImg from "assets/img/main-img.jpg"
 
 function MainBanner(props, ref) {
     return (
