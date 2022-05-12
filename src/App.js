@@ -32,7 +32,6 @@ const App = (props) => {
         homeRef={homeRef}/>
         <Routes>
           <Route 
-            exact
             path="/"
             element={
               <Home 
