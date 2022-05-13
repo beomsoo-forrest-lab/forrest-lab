@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App';
 import "style.scss";
@@ -8,7 +8,7 @@ import "style.scss";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
+    <Router basemname={`/${process.env.PUBLIC_URL}`}>
         <App />
-    </BrowserRouter>
+    </Router>
 );

@@ -31,8 +31,9 @@ const App = (props) => {
         onDoClick = {onDoClick}
         homeRef={homeRef}/>
         <Routes>
-          <Route 
-            path="/"
+          <Route
+            exact
+            path=""
             element={
               <Home 
                 homeRef={homeRef}

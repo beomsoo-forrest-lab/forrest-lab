@@ -11,7 +11,7 @@ const Header = (props) => {
         <div id="header" className= {downbar ? "header header-blur" : "header"}>
             <div className= {downbar ? "container rolldown" : "container"}>
                 <div className="main-navigation">
-                    <Link to="/">
+                    <Link to="">
                         <img src = { logo_black } loading="lazy"/>
                     </Link>
 
