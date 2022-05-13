@@ -15,8 +15,10 @@ const Masonry = (props, ref) => {
                 src={content.image}
                 onClick={(e)=>{
                     popupImgRef.current.src = e.target.src;
+                    popupImgRef.current.alt = e.target.alt;
                     clickPopup();
-                    }}/>
+                    }}
+                alt={content.title}/>
             <div className="desc">
                 <p className="place">{content.title}</p>
             </div>
@@ -31,7 +33,7 @@ const Masonry = (props, ref) => {
 
             <div className={popup ? "popup popup-open" : "popup"} onClick={
                 ()=>{clickPopup();}}>
-                    <img src="" ref={popupImgRef} />
+                    <img src="" ref={popupImgRef} loading="lazy" alt=""/>
             </div>
         </section>
     );

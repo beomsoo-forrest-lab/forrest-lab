@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import MainImg from "assets/img/main-img.jpg"
 
 function MainBanner(props, ref) {
     return (
@@ -11,7 +10,7 @@ function MainBanner(props, ref) {
                     </h1>
                 </div>
                 <div className="image-frame">
-                    <img src={MainImg} alt="Main banner image"/>
+                    <img src={props.mainImg} alt="Main banner" loading="lazy"/>
                 </div>
                 <div
                     className="copy-content"

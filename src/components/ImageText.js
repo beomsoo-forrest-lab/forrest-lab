@@ -1,5 +1,4 @@
 import React, { forwardRef } from "react";
-import SecondSection from "assets/img/second-img.jpg"
 
 function ImageText(props, ref) {
     return (
@@ -19,7 +18,7 @@ function ImageText(props, ref) {
                         Forrest lab is a progressive and contemporary practice that focuses on architecture and design - from urban planning to buildings, interiors, objects, and products. As an active part of a design process, Pirinen & Salo is involved throughout the whole process, from the first sketch to on-site supervision.
                     </p>
                 </div>
-                <img src= {SecondSection} />
+                <img src= {props.secondImg} loading="lazy" alt="second section"/>
             </div>
         </section>
     )

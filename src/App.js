@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { useRef } from "react";
 import AOS from 'aos';
+
+import "style.scss";
 import 'aos/dist/aos.css';
 
 import Footer from "components/Footer";

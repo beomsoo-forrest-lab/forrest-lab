@@ -12,7 +12,7 @@ const Header = (props) => {
             <div className= {downbar ? "container rolldown" : "container"}>
                 <div className="main-navigation">
                     <Link to="">
-                        <img src = { logo_black } loading="lazy"/>
+                        <img src = { logo_black } loading="lazy" alt="logo block"/>
                     </Link>
 
                     <div className="hamburger-button" onClick={showDownbar}>

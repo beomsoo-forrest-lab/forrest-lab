@@ -1,4 +1,4 @@
-import { useRef, forwardRef } from "react";
+import { forwardRef } from "react";
 
 import MainBanner from "../components/MainBanner";
 import ImageText from "../components/ImageText";
@@ -8,6 +8,9 @@ import content01 from "assets/img/content01.jpg";
 import content02 from "assets/img/content02.jpg";
 import content03 from "assets/img/content03.jpg";
 import content04 from "assets/img/content04.jpg";
+
+import MainImg from "assets/img/main-img.jpg";
+import SecondImg from "assets/img/second-img.jpg";
 
 const Home = (props, ref) => {
     const contents = [
@@ -45,8 +48,8 @@ const Home = (props, ref) => {
 
     return(
         <div className="main">
-            <MainBanner ref={props.homeRef}/>
-            <ImageText ref={props.aboutRef}/>
+            <MainBanner ref={props.homeRef} mainImg={MainImg}/>
+            <ImageText ref={props.aboutRef} secondImg={SecondImg}/>
             <Masonry ref={props.doRef} contents={contents} />
         </div>
     );
