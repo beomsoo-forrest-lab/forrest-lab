@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 
-function ImageText(props, ref) {
+const ImageText = (props, ref) => {
     return (
         <section className="section image-text" ref={ref}>
             <div className="container">

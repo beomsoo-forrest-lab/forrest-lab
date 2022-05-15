@@ -5,7 +5,7 @@ import Address_icon from "assets/img/i_address.svg";
 import Contact_icon from "assets/img/i_contact.svg";
 import Copyright_icon from "assets/img/i_copyright.svg";
 
-function Footer() {
+const Footer = () => {
     return (
         <div id="footer">
             <div className="container">

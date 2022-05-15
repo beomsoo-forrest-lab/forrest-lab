@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 
-function MainBanner(props, ref) {
+const MainBanner= (props, ref) => {
     return (
         <section className="section main-banner" ref={ref}>
             <div className="container">

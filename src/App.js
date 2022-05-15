@@ -9,8 +9,9 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 
 import Home from "router/Home";
+import NotFound from "router/NotFound";
 
-const App = (props) => {
+const App = () => {
   AOS.init({
     disable: false,
     duration : 1000,
@@ -34,13 +35,13 @@ const App = (props) => {
         homeRef={homeRef}/>
         <Routes>
           <Route
-            exact
-            path=""
+            exact path="/"
             element={
               <Home 
                 homeRef={homeRef}
                 aboutRef={aboutRef}
                 doRef={doRef}/>}/>
+          <Route path="/notfound" component={NotFound}/>
         </Routes>
       <Footer/>
     </div>

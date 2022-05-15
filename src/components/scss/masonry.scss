@@ -24,19 +24,14 @@
             .desc {
                 display: flex;
                 padding: 12px 0;
-                justify-content: space-between;
-                align-items: flex-end;
+                justify-content: center;
+                align-items: center;
 
                 .place {
                     @include font_regular;
                     color: $primary-color;
                     @include mobile {
                     }
-                }
-
-                .date {
-                    @include font_regular;
-                    color: $primary-color;
                 }
             }
             &:nth-child(2n) {

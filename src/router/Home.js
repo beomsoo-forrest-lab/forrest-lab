@@ -9,41 +9,16 @@ import content02 from "assets/img/content02.jpg";
 import content03 from "assets/img/content03.jpg";
 import content04 from "assets/img/content04.jpg";
 
-import MainImg from "assets/img/main-img.jpg";
+import MainImg from "assets/img/main-image.png";
 import SecondImg from "assets/img/second-img.jpg";
 
-const Home = (props, ref) => {
+const Home = (props) => {
     const contents = [
-        {
-          id : 1,
-          title : "First box",
-          desc : "2202. 0. 0",
-          image : content01,
-        },
-        {
-          id : 2,
-          title : "second box",
-          desc : "2202. 0. 0",
-          image : content02,
-        },
-        {
-          id : 3,
-          title : "second box",
-          desc : "2202. 0. 0",
-          image : content03,
-        },
-        {
-          id : 4,
-          title : "second box",
-          desc : "2202. 0. 0",
-          image : content04,
-        },
-        {
-          id : 5,
-          title : "Fifth box",
-          desc : "2202. 0. 0",
-          image : content04,
-        },
+        { title : "Log house", desc : "2202. 0. 0", image : content01, id : 1},
+        { title : "Lake view", desc : "2202. 0. 0", image : content02, id : 2},
+        { title : "second box", desc : "2202. 0. 0", image : content03, id : 3},
+        { title : "second box", desc : "2202. 0. 0", image : content04, id : 4},
+        { title : "Fifth box",desc : "2202. 0. 0", image : content04, id : 5},
       ];
 
     return(

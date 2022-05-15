@@ -6,12 +6,13 @@ import logo_black from "assets/img/forrest_lab_icon.svg";
 const Header = (props) => {
     const [downbar, setDownbar] = useState(false);
     const showDownbar = () => setDownbar(!downbar);
+    console.log(downbar);
 
     return (
         <div id="header" className= {downbar ? "header header-blur" : "header"}>
             <div className= {downbar ? "container rolldown" : "container"}>
                 <div className="main-navigation">
-                    <Link to="">
+                    <Link to="" onClick={props.onHomeClick}>
                         <img src = { logo_black } loading="lazy" alt="logo block"/>
                     </Link>
 
