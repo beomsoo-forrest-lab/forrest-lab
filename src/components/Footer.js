@@ -1,4 +1,5 @@
 import React from "react";
+import InfoBlock from "./InfoBlock";
 
 import logo_basic from "assets/img/forrest_lab_logo_basic.svg";
 import Address_icon from "assets/img/i_address.svg";
@@ -14,42 +15,14 @@ const Footer = () => {
                 </div>
                 <div className="info">
                     <div className="info-box address">
-                        <p>
-                            <i>
-                                <img src={Address_icon} alt="dd" />
-                            </i>
-                            <span>
-                            Helsinki | Mannerheiminaukio 1 00100 Helsinki, Finland
-                            </span>
-                        </p>
-                        <p>
-                            <i>
-                                <img src={Address_icon} alt="dd" />
-                            </i>
-                            <span>
-                                Seoul | Spaces Gran Seoul, 33 Jong-ro, Seoul, Korea
-                            </span>
-                        </p>
+                        <InfoBlock img={Address_icon} alt={"Address icon"} content={"Helsinki | Mannerheiminaukio 1 00100 Helsinki, Finland"}/>
+                        <InfoBlock img={Address_icon} alt={"Address icon"} content={"Seoul | Spaces Gran Seoul, 33 Jong-ro, Seoul, Korea"}/>
                     </div>
                     <div className="info-box contact">
-                        <p>
-                            <i>
-                                <img src={Contact_icon} alt="dd" />
-                            </i>
-                            <span>
-                                info@forrestlab.com
-                            </span>
-                        </p>
+                        <InfoBlock img={Contact_icon} alt={"Contact icon"} content={"info@forrestlab.com"}/>
                     </div>
                     <div className="info-box copyright">
-                        <p>
-                            <i>
-                                <img src={Copyright_icon} alt="dd" />
-                            </i>
-                            <span>
-                                2022. FORREST LAB all rights reserved
-                            </span>
-                        </p>
+                        <InfoBlock img={Copyright_icon} alt={"Copyright icon"} content={"2022. FORREST LAB all rights reserved"}/>
                     </div>
                 </div>
             </div>

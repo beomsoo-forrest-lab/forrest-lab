@@ -6,7 +6,6 @@ import logo_black from "assets/img/forrest_lab_icon.svg";
 const Header = (props) => {
     const [downbar, setDownbar] = useState(false);
     const showDownbar = () => setDownbar(!downbar);
-    console.log(downbar);
 
     return (
         <div id="header" className= {downbar ? "header header-blur" : "header"}>

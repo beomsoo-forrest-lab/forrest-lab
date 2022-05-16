@@ -31,8 +31,7 @@ const App = () => {
       <Header 
         onHomeClick = {onHomeClick}
         onAboutClick = {onAboutClick}
-        onDoClick = {onDoClick}
-        homeRef={homeRef}/>
+        onDoClick = {onDoClick}/>
         <Routes>
           <Route
             exact path="/"

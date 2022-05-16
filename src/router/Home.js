@@ -4,13 +4,14 @@ import MainBanner from "../components/MainBanner";
 import ImageText from "../components/ImageText";
 import Masonry from "../components/Masonry";
 
+
+import MainImg from "assets/img/main-img.png";
+import SecondImg from "assets/img/second-img.jpg";
+
 import content01 from "assets/img/content01.jpg";
 import content02 from "assets/img/content02.jpg";
 import content03 from "assets/img/content03.jpg";
 import content04 from "assets/img/content04.jpg";
-
-import MainImg from "assets/img/main-image.png";
-import SecondImg from "assets/img/second-img.jpg";
 
 const Home = (props) => {
     const contents = [
