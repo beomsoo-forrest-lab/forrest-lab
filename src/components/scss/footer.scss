@@ -71,6 +71,9 @@
 
                 .copyright-icon {
                     margin-right: 6px;
+                    @include mobile {
+                        margin-right: 0;
+                    }
                 }
 
                 hr {
@@ -79,6 +82,9 @@
                     width: 1px;
                     margin: 0 18px;
                     background: $primary-color;
+                    @include mobile {
+                        margin: 0;
+                    }
                 }
 
                 span {
