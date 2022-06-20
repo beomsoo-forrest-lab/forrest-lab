@@ -121,13 +121,21 @@
         background: rgba(255, 255, 255, 0.9);
         opacity: 0;
         transition: 0.2s ease;
+        overflow: hidden;
         cursor: pointer;
 
-        img {
-            display: block;
-            max-width: 1024px;
-            max-height: 1024px;
-            width: auto;
+        .image-content {
+            width: 70%;
+            max-width: 768px;
+            max-height: 90%;
+
+            @include tablet {
+                width: 80%;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
         }
 
         @include mobile {

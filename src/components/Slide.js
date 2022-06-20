@@ -12,7 +12,7 @@ const Slide = (props, ref) => {
                     {content.title}
                 </h2>
                 <hr/>
-                <p className="copy-small">
+                <p className="copy-body">
                     {content.desc}
                 </p>
             </div>

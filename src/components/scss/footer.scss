@@ -53,10 +53,11 @@
         .copyright-content {
             width: 100%;
             display: flex;
-            justify-content: center;
             .content {
                 display: flex;
+                justify-content: center;
                 align-items: center;
+                width: 100%;
                 padding: 12px 0;
                 .instagram-icon {
                     display: block;
@@ -83,7 +84,11 @@
                 span {
                     display: block;
                     color: $primary-color;
-                    @include font_small;
+                    @include font_regular;
+                }
+
+                @include mobile {
+                    justify-content: space-between;
                 }
             }
         }
