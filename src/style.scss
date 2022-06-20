@@ -9,6 +9,16 @@
 @import "components/scss/masonry.scss";
 @import "components/scss/slide.scss";
 
+* {
+    &::selection {
+        background: #c4c4c4;
+    }
+
+    &::-moz-selection {
+        background: #c4c4c4;
+    }
+}
+
 body {
     background: #E4E4E4;
 }

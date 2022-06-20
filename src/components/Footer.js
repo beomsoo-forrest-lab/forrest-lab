@@ -24,7 +24,7 @@ const Footer = () => {
                 <div className="copyright-content">
                     <p className="content">
                         <a href="https://www.naver.com/" target="_blank">
-                            <i>
+                            <i className="instagram-icon">
                                 <img src={Instagram_icon} alt="copyright" />
                             </i>
                         </a>

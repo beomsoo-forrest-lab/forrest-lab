@@ -16,8 +16,23 @@
 
         .content-slide {
             overflow-x: auto;
+            overflow-y: hidden;
             flex-wrap: nowrap;
             display: flex;
+            padding-bottom: 48px;
+            /* width */
+            &::-webkit-scrollbar {
+                height: 4px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                border-radius: 10px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                width: 250px;
+                background: #c4c4c4; 
+            }
 
             .business-content {
                 flex: 0 0 auto;
