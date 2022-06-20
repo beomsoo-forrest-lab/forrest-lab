@@ -5,12 +5,96 @@
     z-index: 100;
     width: 100%;
 
-    .container {
+    .header-container {
         padding: 0 24px;
         height: 72px;
         transition: 0.5s ease;
 
-        .downbar {
+        .main-navigation {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+
+            .header-logo {
+                width: 32px;
+                height : 28px;
+                cursor: pointer;
+                transition: 0.3s;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background: transparent;
+                }
+                @include mobile {
+                    width: 24px;
+                    height: 20px;
+                }
+            }
+    
+            .hamburger-button {
+                position: relative;
+                width: 24px;
+                height: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+                .pattie {
+                    position: absolute;
+                    display: block;
+                    width: 12px;
+                    height: 2px;
+                    background: $primary-color;
+                    transition: 0.5s ease-in-out;
+                }
+
+                .pattie:nth-child(1) { top: 0; left: 0; }
+                .pattie:nth-child(2) { top: 0; right: 0; }
+                .pattie:nth-child(3) { bottom: 0; left: 0; }
+                .pattie:nth-child(4) { bottom: 0; right: 0; }
+
+                .pattie-rotate:nth-child(1),
+                .pattie-rotate:nth-child(4) {
+                    transform: rotate(45deg);
+                }
+                .pattie-rotate:nth-child(2),
+                .pattie-rotate:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+
+                .pattie-rotate:nth-child(1) { 
+                    top: 3px; left: 2px;
+                    @include mobile { top: 2px; left: 1px; }
+                }
+
+                .pattie-rotate:nth-child(2) {
+                    top: 3px; right: 2px;
+                    @include mobile { top: 2px; right: 1px; }
+                }
+
+                .pattie-rotate:nth-child(3) {
+                    bottom: 3px; left: 2px;
+                    @include mobile { bottom: 2px; left: 1px; }
+                }
+
+                .pattie-rotate:nth-child(4) {
+                    bottom: 3px; right: 2px;
+                    @include mobile { bottom: 2px; right: 1px; }
+                }
+
+                @include mobile {
+                    width: 20px;
+                    height: 12px;
+                }
+            }
+            @include mobile {
+                height: 48px;
+            }
+        }
+
+        .drop-menu {
             position: absolute;
             top: 0;
             left: 0;
@@ -40,63 +124,22 @@
             }
         }
         
-        .display {
+        .show-drop-menu {
             opacity: 1;
             height: 100%;
         }
 
-        .main-navigation {
-            position: relative;
-            z-index: 1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 72px;
-            img {
-                display: block;
-                width: 32px;
-                background: transparent;
-            }
-    
-            .hamburger-button {
-                position: relative;
-                width: 36px;
-                height: 36px;
-                cursor: pointer;
-                .pattie {
-                    position: absolute;
-                    display: block;
-                    width: 24px;
-                    height: 2px;
-                    left: 6px;
-                    background: $primary-color;
-                    transition: 0.5s ease;
-                }
-
-                .pattie01 {
-                    top: 12px;
-                }
-
-                .pattie01-rotate {
-                    top: 17px;
-                    transform: rotate(150deg);
-                }
-
-                .pattie02 {
-                    top: 22px;
-                }
-
-                .pattie02-rotate {
-                    top: 17px;
-                    transform: rotate(-150deg);
-                }
-            }
+        @include tablet {
+            padding: 0 16px;
+        }
+        @include mobile {
+            padding: 0 16px;
+            height: 48px;
         }
     }
 
     .rolldown {
         height: 100vh;
-        
     }
 }
 
@@ -106,6 +149,6 @@
     transition: 0.5s ease;
 }
 
-.header-blur {
+.header-rolldown-blur {
     backdrop-filter: blur(8px);
 }

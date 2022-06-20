@@ -1,24 +1,27 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 
-const ImageText = (props, ref) => {
+const ImageText= (props, ref) => {
     return (
         <section className="section image-text" ref={ref}>
             <div className="container">
-                <div className="copy-content">
-                    <h1 
-                    className="copy-heading" 
-                    data-aos="fade-up">
-                        FORREST LAB
-                    </h1>
-                    <p
-                    data-aos="fade-up"
-                    data-aos-delay="200">
-                        Forrest lab is a partnership of two architects – Puisto and CELT. Puisto and CELT established their office in Finland in 2018. The office is currently located in both, Helsinki, and Seoul.
-                        <br /><br />
-                        Forrest lab is a progressive and contemporary practice that focuses on architecture and design - from urban planning to buildings, interiors, objects, and products. As an active part of a design process, Pirinen & Salo is involved throughout the whole process, from the first sketch to on-site supervision.
-                    </p>
+                <div className="image-content">
+                    <img src={props.sustainability} alt="sustainable" loading="lazy"/>
                 </div>
-                <img src= {props.secondImg} loading="lazy" alt="second section"/>
+                <div
+                    className="copy-content"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="1200">
+                    <h1 className="copy-heading">
+                        Sustainability Resort & Hotel
+                    </h1>
+                    <p className="copy-body">
+                        We are a Modular, Building and master planning company specializing in socially and ecologically responsible solutions. Our goal is holistic sustainability which starts with taking care of the environment and produces social value. Our works and expert services cover the landscape as a whole, both built and unbuilt environments, in the countryside and in the city.
+                    </p>
+                    <div class="break-logo">
+                        <img src={props.logo_black} alt="logo black"/>
+                    </div>
+                </div>
             </div>
         </section>
     )

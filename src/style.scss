@@ -7,18 +7,28 @@
 @import "components/scss/main-banner.scss";
 @import "components/scss/image-text.scss";
 @import "components/scss/masonry.scss";
+@import "components/scss/slide.scss";
+
+body {
+    background: #E4E4E4;
+}
 
 .section {
     display: flex;
     align-items: center;
-    padding: 64px 0;
+    padding: 128px 0;
+
+    @include tablet {
+        padding: 104px 0;
+    }
+
     @include mobile {
-        padding: 40px 0;
+        padding: 72px 0;
     }
 }
 
 .container  {
-    max-width: 1392px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 24px;
@@ -30,4 +40,29 @@
 .copy-heading {
     @include font_heading;
     margin-bottom: 24px;
+    color: $primary-color;
+    
+    @include mobile {
+        margin-bottom: 18px;
+    }
+}
+
+.copy-body {
+    @include font_regular;
+    color: $primary-color;
+}
+
+.copy-sub-heading {
+    @include font_sub_heading;
+    color: $primary-color;
+}
+
+.copy-small {
+    @include font_small;
+    color: $primary-color;
+}
+
+img {
+    display: block;
+    width: 100%;
 }

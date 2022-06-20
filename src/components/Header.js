@@ -1,30 +1,32 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
 
-import logo_black from "assets/img/forrest_lab_icon.svg";
+import symbol_black from "assets/img/forrest_lab_symbol_black.svg";
 
 const Header = (props) => {
-    const [downbar, setDownbar] = useState(false);
-    const showDownbar = () => setDownbar(!downbar);
+    const [dropMenu, setDropMenu] = useState(false);
+    const showDropMenu = () => setDropMenu(!dropMenu);
 
     return (
-        <div id="header" className= {downbar ? "header header-blur" : "header"}>
-            <div className= {downbar ? "container rolldown" : "container"}>
+        <div id="header" className= {dropMenu ? "header header-rolldown-blur" : "header"}>
+            <div className= {dropMenu ? "container header-container rolldown" : "container header-container"}>
                 <div className="main-navigation">
-                    <Link to="" onClick={props.onHomeClick}>
-                        <img src = { logo_black } loading="lazy" alt="logo block"/>
-                    </Link>
+                    <div className="header-logo" onClick={props.onHomeClick}>
+                        <img src = {symbol_black} loading="lazy" alt="symbol"/>
+                    </div>
 
-                    <div className="hamburger-button" onClick={showDownbar}>
-                        <i className={downbar ? "pattie pattie01 pattie01-rotate" : "pattie pattie01"}></i>
-                        <i className={downbar ? "pattie pattie02 pattie02-rotate" : "pattie pattie02"}></i>
+                    <div className="hamburger-button" onClick={showDropMenu}>
+                        <i className={dropMenu ? "pattie pattie-rotate" : "pattie"}></i>
+                        <i className={dropMenu ? "pattie pattie-rotate" : "pattie"}></i>
+                        <i className={dropMenu ? "pattie pattie-rotate" : "pattie"}></i>
+                        <i className={dropMenu ? "pattie pattie-rotate" : "pattie"}></i>
                     </div>
                 </div>
 
-                <ul className={downbar ? "downbar display" : "downbar"}>
-                    <li onClick={() => {props.onHomeClick(); showDownbar(); }}>Home</li>
-                    <li onClick={() => {props.onAboutClick(); showDownbar(); }}>About us</li>
-                    <li onClick={() => {props.onDoClick(); showDownbar(); }}>What we do</li>
+                <ul className={dropMenu ? "drop-menu show-drop-menu" : "drop-menu"}>
+                    <li onClick={() => {props.onHomeClick(); showDropMenu(); }}>Home</li>
+                    <li onClick={() => {props.onAboutClick(); showDropMenu(); }}>About us</li>
+                    <li onClick={() => {props.onBusinessClick(); showDropMenu(); }}>Business</li>
+                    <li onClick={() => {props.onProjectClick(); showDropMenu(); }}>Project</li>
                 </ul>
             </div>
         </div>

@@ -20,26 +20,30 @@ const App = () => {
 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
-  const doRef = useRef(null);
+  const businessRef = useRef(null);
+  const projectRef = useRef(null);
 
   const onHomeClick = () => { homeRef.current.scrollIntoView({behavior : "smooth"}) };
   const onAboutClick = () => { aboutRef.current.scrollIntoView({behavior : "smooth"}) };
-  const onDoClick = () => { doRef.current.scrollIntoView({behavior : "smooth"}) };
+  const onBusinessClick = () => { businessRef.current.scrollIntoView({behavior : "smooth"}) };
+  const onProjectClick = () => { projectRef.current.scrollIntoView({behavior : "smooth"}) };
 
   return (
     <div className="warp">
       <Header 
         onHomeClick = {onHomeClick}
         onAboutClick = {onAboutClick}
-        onDoClick = {onDoClick}/>
+        onBusinessClick = {onBusinessClick}
+        onProjectClick = {onProjectClick}/>
         <Routes>
           <Route
             exact path="/"
             element={
               <Home 
                 homeRef={homeRef}
+                businessRef={businessRef}
                 aboutRef={aboutRef}
-                doRef={doRef}/>}/>
+                projectRef={projectRef}/>}/>
           <Route path="/notfound" component={NotFound}/>
         </Routes>
       <Footer/>

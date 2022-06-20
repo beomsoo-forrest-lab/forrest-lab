@@ -1,6 +1,6 @@
 const InfoBlock = (props) => {
     return (
-        <p>
+        <p className="content">
             <i>
                 <img src={props.img} alt={props.alt} />
             </i>

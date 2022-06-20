@@ -1,44 +1,59 @@
 .image-text {
+    width: 100%;
     .container {
-        position: relative;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        max-width: 100%;
-        height: 800px;
-        margin: 0 auto;
-        padding: 0;
-        overflow: hidden;
+
+        .image-content {
+            max-width: 912px;
+            height: auto;
+            overflow: hidden;
+            transition: 0.3s;
+
+            @include tablet {
+                max-width: 552px;
+                height: auto;
+            }
+        }
+
         .copy-content {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-            padding: 0 24px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.3);
-            .copy-heading {
-                max-width: 524px;
-                color: $secondary-color;
+            max-width: 672px;
+            margin-top: 104px;
+            transition: 0.3s;
+            .copy-heading,
+            .copy-body {
+                color: $primary-color;
+                text-align: center;
             }
-            p {
-                @include font_regular;
-                max-width: 672px;
-                color: $secondary-color;
-            }
-        }
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -10;
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            .break-logo {
+                width: 120px;
+                height: 100px;
+                margin-top: 48px;
+
+                @include tablet {
+                    width: 96px;
+                    height: 80px;
+                }
+
+                @include mobile {
+                    width: 72px;
+                    height: 60px;
+                    margin-top: 36px;
+                }
+            }
+
+            @include tablet {
+                max-width: 552px;
+            }
+
+            @include mobile {
+                margin-top: 72px;
+            }
         }
     }
 }

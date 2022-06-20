@@ -1,37 +1,54 @@
 .main-banner {
-    width: 100%;
-    margin-top: 72px;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 128px;
+    overflow: hidden;
     .container {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        .image-frame {
-            max-width: 1080px;
-            height: auto;
-            margin: 0 auto;
-            img {
-                display: block;
-                width: 100%;
-            }
-        }
-
+        align-items: center;
+        padding: 0 24px;
         .copy-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            width: 100%;
+            max-width: 912px;
+            padding: 72px 48px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
             text-align: center;
-            margin: 48px 0;
-            .copy-heading {
-                max-width: 524px;
-                margin-bottom: 24px;
+            transition: 0.3s ease;
+            .copy-body {
                 color: $primary-color;
             }
 
-            p {
-                max-width: 672px;
-                color: $primary-color;
-                @include font_regular;
+            @include tablet {
+                max-width: 552px;
+            }
+
+            @include mobile {
+                padding: 32px 36px;
             }
         }
+        @include tablet {
+            padding: 0 16px;
+        }
+    }
+
+    .background-image {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    @include tablet {
+        margin-bottom: 104px;
+    }
+
+    @include mobile {
+        margin-bottom: 72px;
     }
 }
