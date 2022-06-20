@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/forrest-lab/static/css/main.75b7e8aa.css",
+    "main.js": "/forrest-lab/static/js/main.e77d328a.js",
+    "static/media/sustainability.png": "/forrest-lab/static/media/sustainability.0401f4267b2f6bbe27aa.png",
+    "static/media/content01.jpg": "/forrest-lab/static/media/content01.005ab56f6129c420d259.jpg",
+    "static/media/content04.jpg": "/forrest-lab/static/media/content04.5e1aa05f3d7b313b3490.jpg",
+    "static/media/content06.jpg": "/forrest-lab/static/media/content06.04b4d32532115993e19b.jpg",
+    "static/media/content07.jpg": "/forrest-lab/static/media/content07.4a5ac9d2928133b044a9.jpg",
+    "static/media/content02.jpg": "/forrest-lab/static/media/content02.299c6340e090e5fe878a.jpg",
+    "static/media/mass_timber.jpg": "/forrest-lab/static/media/mass_timber.2302dfca5b2f55aa221c.jpg",
+    "static/media/modular_developer.jpg": "/forrest-lab/static/media/modular_developer.979f50cc9e91e3ec8706.jpg",
+    "static/media/content08.jpg": "/forrest-lab/static/media/content08.ddcdea4e1c14e0129364.jpg",
+    "static/media/content03.jpg": "/forrest-lab/static/media/content03.5eded7355f0df1f702e0.jpg",
+    "static/media/master_plan.jpg": "/forrest-lab/static/media/master_plan.b8a9cb05dd35bef04cca.jpg",
+    "static/media/content05.jpg": "/forrest-lab/static/media/content05.66967d178a1183d106b0.jpg",
+    "static/media/main-img.jpg": "/forrest-lab/static/media/main-img.64e3b73cbedad2bde059.jpg",
+    "static/media/forrest_lab_logo_black.svg": "/forrest-lab/static/media/forrest_lab_logo_black.a1c4f06e4570f405ae94dcc18a88545a.svg",
+    "static/media/i_instagram.svg": "/forrest-lab/static/media/i_instagram.ee28edb05361edfb52569dc9ee510950.svg",
+    "static/media/forrest_lab_symbol_black.svg": "/forrest-lab/static/media/forrest_lab_symbol_black.ba63e64e0f73859b83920f10a89aa9f5.svg",
+    "static/media/i_address.svg": "/forrest-lab/static/media/i_address.d5121056c9e04ba4e2da35203a69f428.svg",
+    "index.html": "/forrest-lab/index.html",
+    "static/media/i_copyright.svg": "/forrest-lab/static/media/i_copyright.bec2903c0fa90bae969f084e1a581a88.svg",
+    "static/media/i_contact.svg": "/forrest-lab/static/media/i_contact.2997ce9915f299c12c286e61556b8f8b.svg",
+    "main.75b7e8aa.css.map": "/forrest-lab/static/css/main.75b7e8aa.css.map",
+    "main.e77d328a.js.map": "/forrest-lab/static/js/main.e77d328a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75b7e8aa.css",
+    "static/js/main.e77d328a.js"
+  ]
+}
