@@ -10,7 +10,7 @@
         padding: 0 24px;
         .copy-content {
             width: 100%;
-            max-width: 912px;
+            max-width: 552px;
             padding: 72px 48px;
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(8px);
@@ -18,10 +18,6 @@
             transition: 0.3s ease;
             .copy-body {
                 color: $primary-color;
-            }
-
-            @include tablet {
-                max-width: 552px;
             }
 
             @include mobile {

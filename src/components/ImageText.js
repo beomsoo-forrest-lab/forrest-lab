@@ -9,7 +9,7 @@ const ImageText= (props, ref) => {
                 </div>
                 <div className="copy-content">
                     <h1 className="copy-heading">
-                        Sustainability Resort & Hotel
+                        Sustainable Hotel &amp; Resort
                     </h1>
                     <p className="copy-body">
                         We are a Modular, Building and master planning company specializing in socially and ecologically responsible solutions. Our goal is holistic sustainability which starts with taking care of the environment and produces social value. Our works and expert services cover the landscape as a whole, both built and unbuilt environments, in the countryside and in the city.

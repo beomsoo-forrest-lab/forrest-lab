@@ -6,11 +6,11 @@ import Slide from "../components/Slide";
 import Masonry from "../components/Masonry";
 
 import mainImg from "assets/img/main-img.jpg";
-import sustainability from "assets/img/sustainability.png";
+import sustainability from "assets/img/sustainability.jpg";
 import logo_black from "assets/img/forrest_lab_logo_black.svg";
 
 import modular_developer from "assets/img/modular_developer.jpg";
-import mass_timber from "assets/img/mass_timber.jpg";
+import mass_timber from "assets/img/mass_timber_building.jpg";
 import master_plan from "assets/img/master_plan.jpg";
 
 import content01 from "assets/img/content01.jpg";
@@ -21,6 +21,9 @@ import content05 from "assets/img/content05.jpg";
 import content06 from "assets/img/content06.jpg";
 import content07 from "assets/img/content07.jpg";
 import content08 from "assets/img/content08.jpg";
+import content09 from "assets/img/content09.jpg";
+import content10 from "assets/img/content10.jpg";
+import content11 from "assets/img/content11.jpg";
 
 const Home = (props) => {
     const businessContents = [
@@ -37,6 +40,10 @@ const Home = (props) => {
         { image : content05, id : 5},
         { image : content06, id : 6},
         { image : content07, id : 7},
+        { image : content08, id : 8},
+        { image : content09, id : 9},
+        { image : content10, id : 10},
+        { image : content11, id : 11},
       ];
 
     return(

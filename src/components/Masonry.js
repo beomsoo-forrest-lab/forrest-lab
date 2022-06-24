@@ -40,8 +40,7 @@ const Masonry = (props, ref) => {
                 </div>
             </div>
 
-            <div className={popup ? "popup popup-open" : "popup"} onClick={
-                ()=>{clickPopup();}}>
+            <div className={popup ? "popup popup-open" : "popup"} onClick={()=>{clickPopup();}}>
                     <div className="image-content">
                         <img src="" ref={popupImgRef} loading="lazy"/>
                     </div>

@@ -29,9 +29,6 @@
             }
             .masonry-content {
                 padding: 1.7%;
-                @include tablet {
-                    margin-bottom: 24px;
-                }
                 @include mobile {
                     padding: 0;
                     margin-bottom: 48px;
@@ -46,9 +43,20 @@
                         opacity: 0.5;
                     }
                 }
+
+                &:nth-child(1),
+                &:nth-child(6),
+                &:nth-child(7) {
+                    margin-bottom: 80px;
+
+                    @include mobile {
+                        margin-bottom: 48px;
+                    }
+                }
+
     
                 &:nth-child(1),
-                &:nth-of-type(6n+6) {
+                &:nth-of-type(7n+7) {
                     width: 66.6666%;
                     float: left;
                     clear: both;
@@ -59,7 +67,7 @@
                 }
     
                 &:nth-child(2),
-                &:nth-of-type(7n+7) {
+                &:nth-of-type(8n+8) {
                     width: 33.3333%;
                     margin-top: 120px;
                     float: right;
@@ -71,11 +79,10 @@
                 }
     
                 &:nth-child(3),
-                &:nth-of-type(8n+8) {
+                &:nth-of-type(9n+9) {
                     width: 33.3333%;
-                    margin-top: 120px;
                     float: left;
-                    clear: both;
+                    clear: right;
 
                     @include mobile {
                         width: 75%;
@@ -84,7 +91,7 @@
                 }
     
                 &:nth-child(4),
-                &:nth-of-type(9n+9) {
+                &:nth-of-type(10n+10) {
                     width: 66.6666%;
                     float: right;
 
@@ -94,14 +101,39 @@
                 }
     
                 &:nth-child(5),
-                &:nth-of-type(10n+10) {
+                &:nth-of-type(11n+11) {
+                    margin-top: 120px;
                     width: 33.3333%;
+                    clear: left;
                     float: left;
 
                     @include mobile {
                         width: 75%;
-                        
+                        margin-top: 0;
                     }
+                }
+
+                &:nth-child(6),
+                &:nth-of-type(12n+12) {
+                    width: 33.3333%;
+                    clear: left;
+
+                    @include mobile {
+                        width: 75%;
+                    }
+                }
+
+                &:nth-child(9) {
+                    margin-top: 120px;
+                    clear: left;
+                    
+                    @include mobile {
+                        margin-top: 0;
+                    }
+                }
+
+                &:nth-child(11) {
+                    margin-top: 0;
                 }
             }
         }
